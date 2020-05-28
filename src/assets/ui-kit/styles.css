@@ -1,0 +1,117 @@
+@import url('http://allfont.ru/allfont.css?fonts=noto-sans');
+.primary-btn {
+  font-size: 0;
+  border-radius: 100px;
+  padding: 18px;
+  border: none;
+  display: inline-block;
+  background-color: #ff6c6c;
+  transition: background 0.3s;
+}
+.primary-btn span {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: white;
+  vertical-align: middle;
+}
+.primary-btn:hover {
+  background-color: rgba(255, 108, 108, 0.75);
+  transition: background 0.3s;
+}
+.primary-btn svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.primary-btn.btn-type-1 span + svg {
+  margin-left: 8px;
+}
+.primary-btn.btn-type-2 svg {
+  display: none;
+}
+.primary-btn.btn-type-3 {
+  padding: 20px;
+}
+.primary-btn.btn-type-3 span {
+  display: none;
+}
+.secondary-btn {
+  font-size: 0;
+  border-radius: 100px;
+  padding: 18px;
+  border: none;
+  display: inline-block;
+  background-color: #01576c;
+  transition: background 0.3s;
+}
+.secondary-btn span {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: white;
+  vertical-align: middle;
+}
+.secondary-btn:hover {
+  background-color: rgba(1, 87, 108, 0.75);
+  transition: background 0.3s;
+}
+.secondary-btn svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.secondary-btn.btn-type-1 span + svg {
+  margin-left: 8px;
+}
+.secondary-btn.btn-type-2 svg {
+  display: none;
+}
+.secondary-btn.btn-type-3 {
+  padding: 20px;
+}
+.secondary-btn.btn-type-3 span {
+  display: none;
+}
+.link-el {
+  text-decoration: none;
+  font-size: 0;
+}
+.link-el.link-type-1:hover .link-el__text {
+  transition: color 0.3s;
+  color: #ff6c6c;
+}
+.link-el.link-type-1:hover .link-el__icon {
+  transition: stroke 0.3s;
+  stroke: #ff6c6c;
+}
+.link-el.link-type-1 .link-el__text {
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  transition: color 0.3s;
+}
+.link-el.link-type-1 .link-el__icon {
+  stroke: black;
+  margin-left: 8px;
+  transition: stroke 0.3s;
+}
+.link-el.link-type-2:hover .link-el__text {
+  transition: color 0.3s;
+  color: #ff6c6c;
+}
+.link-el.link-type-2 .link-el__text {
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  transition: color 0.3s;
+}
+.link-el.link-type-2 .link-el__icon {
+  stroke: #ff6c6c;
+  margin-left: 8px;
+  transition: stroke 0.3s;
+}
