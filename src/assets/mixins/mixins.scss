@@ -1,0 +1,23 @@
+$tablet:      '(min-width: 600px)' !default;
+$big-tablet:  '(min-width: 960px)' !default;
+$desktop:     '(min-width: 1200px)' !default;
+$big-desktop: '(min-width: 1380px)' !default;
+
+@mixin breakpoint($media) {
+  @media all and #{$media} {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapp {
+    width: 100%;
+    padding: 0 15px;
+    max-width: 100%;
+    @include breakpoint($tablet) {
+        
+    }
+}

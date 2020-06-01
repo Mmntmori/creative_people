@@ -1,0 +1,206 @@
+.header {
+    &__wrapp {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__menu-btn {
+        padding: 24px 13px;
+        position: relative;
+        &:hover .icon-btn {
+            &:after {
+                top: -8px;
+                transition: all .2s;
+            }
+            &:before {
+                top: 8px;
+                transition: all .2s;
+            }
+        }
+    }
+    &__title {
+        margin: 0 auto;
+        display: block;
+        font-size: 0;
+    }
+
+    &__lang {
+        display: none;
+    }
+
+    &__callback {
+        padding: 15px;
+    }
+}
+
+.icon-btn {
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    &:after {
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: absolute;
+        content: '';
+        top: -5px;
+        transition: all .2s;
+    }
+    &:before {
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        transition: all .2s;
+    }
+}
+
+.about {
+    &__paragraph {
+        font-family: "Noto Sans TC", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #000000;
+    }
+
+    &__wrapp {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        font-family: "Noto Sans TC", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+
+    &__nav {
+        margin-bottom: 52px;
+    }
+
+    &__quote {
+        padding-left: 37px;
+        padding-top: 48px;
+
+        & + .about__paragraph {
+            margin-top: 40px;
+        }
+    }
+}
+
+.about-list,
+.about-sublist {
+    margin-top: 20px;
+    
+    ul {
+        margin-top: 20px;
+    }
+
+    &__item {
+        position: relative;
+
+        padding-left: 28px;
+        span {
+            font-family: "Noto Sans TC", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: #000000;
+        }
+
+        &:before {
+            display: block;
+            content: '';
+            width: 8px;
+            height: 8px;
+            margin-right: 20px;
+            background-color: $secondary-color;
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+    }
+    
+    &__item + &__item {
+        margin-top: 20px;
+    }
+
+
+}
+
+.about-list {
+    padding-bottom: 20px;
+    & + .about__paragraph {
+        padding-bottom: 20px;
+    }
+}
+
+.quote {
+    position: relative;
+    font-family: "Noto Sans TC", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #000000;
+    text-align: left;
+    &:before {
+        display: block;
+        content: url('../assets/images/quotes.svg');
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+    &__text {
+    }
+
+    &__author {
+        margin-top: 20px;
+        &-name {
+            font-weight: 600;
+            display: block;
+        }
+
+        &-company {
+            margin-top: 5px;
+            display: block;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -0.02em;
+        }
+    }
+}
+
+
+.nav {
+    &__link {
+        display: block;
+    }
+
+    &__link + &__link {
+        margin-top: 20px;
+    }
+}
+
+
+
+
